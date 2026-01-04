@@ -1,0 +1,101 @@
+{
+  "tool_name": "Expense Tracker",
+  "summary": {
+    "total": 11,
+    "passed": 8,
+    "failed": 3,
+    "pass_rate": "72.7%",
+    "can_deploy": false,
+    "required_passed": 5,
+    "required_failed": 1
+  },
+  "details": [
+    {
+      "id": "TC001",
+      "name": "必需元素: form",
+      "required": true,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC002",
+      "name": "必需元素: input_amount",
+      "required": true,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC003",
+      "name": "必需元素: submit_button",
+      "required": true,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC004",
+      "name": "必需元素: category_select",
+      "required": true,
+      "passed": false,
+      "error": "未找到元素: ['select, input[type=\"radio\"]']"
+    },
+    {
+      "id": "TC005",
+      "name": "可选元素: export_button",
+      "required": false,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC006",
+      "name": "可选元素: history_list",
+      "required": false,
+      "passed": false,
+      "error": "未找到元素: ['[class*=\"history\"], [class*=\"list\"]']"
+    },
+    {
+      "id": "TC007",
+      "name": "可选元素: budget_section",
+      "required": false,
+      "passed": false,
+      "error": "未找到元素: ['[class*=\"budget\"]']"
+    },
+    {
+      "id": "TC008",
+      "name": "页面结构完整性",
+      "required": true,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC009",
+      "name": "工具标题显示",
+      "required": true,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC010",
+      "name": "移动端适配",
+      "required": false,
+      "passed": true,
+      "error": ""
+    },
+    {
+      "id": "TC011",
+      "name": "基本无障碍",
+      "required": false,
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "recommendations": [
+    {
+      "test": "可选元素: history_list",
+      "suggestion": "建议实现: 可选元素: history_list"
+    },
+    {
+      "test": "可选元素: budget_section",
+      "suggestion": "建议实现: 可选元素: budget_section"
+    }
+  ]
+}
